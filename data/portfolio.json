@@ -1,0 +1,23 @@
+[
+  {
+    "image": "image1.png",
+    "alt": "Capture d’écran du projet Booki",
+    "title": "Booki",
+    "text": "Création d’un site de réservation d’hébergements avec HTML & CSS.",
+    "link": "#"
+  },
+  {
+    "image": "image2.png",
+    "alt": "Capture d’écran du projet Mon Vieux Grimoire",
+    "title": "Mon Vieux Grimoire",
+    "text": "API sécurisée avec Express et MongoDB, gestion d’authentification et CRUD.",
+    "link": "#"
+  },
+  {
+    "image": "image3.png",
+    "alt": "Capture d’écran du projet Kasa",
+    "title": "Kasa",
+    "text": "Refonte d’un site avec React, utilisation de composants et React Router.",
+    "link": "#"
+  }
+]
