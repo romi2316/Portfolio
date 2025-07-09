@@ -102,3 +102,62 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+  // Ajout animation fade-up à l'apparition
+  window.addEventListener('DOMContentLoaded', () => {
+    const fadeUpSection = document.querySelector('#quiz');
+    if(fadeUpSection) {
+      setTimeout(() => fadeUpSection.classList.add('animate'), 100);
+    }
+  });
+
+  document.getElementById('quiz-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const answers = {
+      q1: 'b',
+      q2: 'b',
+      q3: 'a'
+    };
+    let score = 0;
+
+    // Reset previous states
+    document.querySelectorAll('.answer-label').forEach(label => {
+      label.classList.remove('correct', 'incorrect');
+      const oldIcon = label.querySelector('.icon');
+      if (oldIcon) oldIcon.remove();
+    });
+
+    for (const [question, correctAnswer] of Object.entries(answers)) {
+      const selected = document.querySelector(`input[name="${question}"]:checked`);
+      if (selected) {
+        const label = selected.parentElement;
+        if (selected.value === correctAnswer) {
+          score++;
+          label.classList.add('correct');
+          label.insertAdjacentHTML('beforeend', '<span class="icon">✓</span>');
+        } else {
+          label.classList.add('incorrect');
+          label.insertAdjacentHTML('beforeend', '<span class="icon">✗</span>');
+        }
+      }
+    }
+
+    const explanations = [
+      "Un test fonctionnel vérifie que chaque fonctionnalité répond bien aux spécifications demandées.",
+      "Le test de non-régression permet de vérifier qu'une modification n'a pas introduit de nouveaux bugs.",
+      "Cypress, Selenium et JMeter sont des outils couramment utilisés pour automatiser différents types de tests."
+    ];
+
+    let resultHTML = '';
+    if(score === 3) {
+      resultHTML += `<div class="bravo"> 🎉 Bravo !</div>`;
+    }
+    resultHTML += `<h4>Votre score : ${score} / 3</h4>`;
+    explanations.forEach((exp, i) => {
+      resultHTML += `<p><strong>Q${i + 1}:</strong> ${exp}</p>`;
+    });
+
+    document.getElementById('quiz-result').innerHTML = resultHTML;
+  });
