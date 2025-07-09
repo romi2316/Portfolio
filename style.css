@@ -320,6 +320,76 @@ section {
     padding: 1.5rem;
 }
 
+/* Quiz section */
+
+.correct {
+    color: var(--primary-color);
+    font-weight: 700;
+    border-color: var(--primary-color);
+    background: rgba(102, 126, 234, 0.2);
+}
+
+.incorrect {
+    color: #f44336;
+    font-weight: 700;
+    border-color: #f44336;
+    background: rgba(244, 67, 54, 0.15);
+}
+
+.icon {
+    font-weight: 700;
+    margin-left: 12px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.bravo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.answer-label {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    color: var(--text-light);
+}
+
+.answer-label:hover {
+    background: rgba(102, 126, 234, 0.15);
+    border-color: var(--primary-color);
+}
+
+.answer-label input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 /* Contact Section */
 .contact-card {
     background: rgb(117 108 108 / 10%);
