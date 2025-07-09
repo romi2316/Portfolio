@@ -62,6 +62,39 @@ window.addEventListener('scroll', function() {
     animateOnScroll();
 });
 
+// Responsive navbar toggle
+const navbarToggler = document.querySelector(".navbar-toggler");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+
+  // 1. Fermer le menu quand on clique en dehors
+  document.addEventListener("click", function (event) {
+    const isClickInside = navbarCollapse.contains(event.target) || navbarToggler.contains(event.target);
+    const isMenuOpen = navbarCollapse.classList.contains("show");
+
+    if (!isClickInside && isMenuOpen) {
+      navbarToggler.click();
+    }
+  });
+
+  // 2. Fermer le menu quand on clique sur un lien
+  document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+      if (navbarCollapse.classList.contains("show")) {
+        navbarToggler.click();
+      }
+    });
+  });
+
+  // 3. Fermer le menu quand on scrolle
+  let lastScrollY = window.scrollY;
+  window.addEventListener("scroll", () => {
+    const isMenuOpen = navbarCollapse.classList.contains("show");
+    if (isMenuOpen && window.scrollY !== lastScrollY) {
+      navbarToggler.click();
+    }
+    lastScrollY = window.scrollY;
+  });
+
 // Initialize
 createParticles();
 animateOnScroll();
@@ -161,3 +194,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('quiz-result').innerHTML = resultHTML;
   });
+
+  window.addEventListener('beforeunload', function () {
+  window.scrollTo(0, 0);
+});
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }

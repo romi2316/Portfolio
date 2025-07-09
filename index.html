@@ -7,6 +7,7 @@
         content="Portfolio de Roumaissa Chamma, testeur logiciel QA en France. Découvrez mes compétences, mes projets et mon parcours.">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- <base href="/Portfolio/"> -->
 
     <link rel="icon"
@@ -32,7 +33,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#home">Roumaissa</a>
+            <a class="navbar-brand" href="#home">Roumaissa CHAMMA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -174,7 +175,8 @@
                     </li>
                     <li>
                         <i class="fas fa-graduation-cap cert-icon"></i>
-                        <span><strong>Formation :</strong> Alternance Testeur de logiciels – OpenClassrooms (niveau Bac
+                        <span><strong>Formation :</strong> Alternance Testeur de logiciels –
+                            OpenClassrooms (niveau Bac
                             +2)</span>
                     </li>
                     <li>
@@ -191,9 +193,8 @@
             <h2 class="section-title fade-up">Mes projets</h2>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4 fade-up">
-                    <div class="portfolio-card">
-                        <img src="images/loop.webp" alt="Campagne de tests 724events"
-                            class="portfolio-image">
+                    <div class="portfolio-card h-100 w-100">
+                        <img src="images/loop.webp" alt="Campagne de tests 724events" class="portfolio-image">
                         <div class="portfolio-content">
                             <h3 class="heading-light">Campagne de tests 724events</h3>
                             <p>Organisation et exécution d'une campagne de tests complète pour l'application 724events,
@@ -204,21 +205,24 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 fade-up">
-                    <div class="portfolio-card">
+                    <div class="portfolio-card h-100 w-100 d-flex flex-column">
                         <img src="images/automation.webp" alt="Eco Bliss Bath - Tests automatisés"
                             class="portfolio-image">
-                        <div class="portfolio-content">
+                        <div class="portfolio-content d-flex flex-column flex-grow-1">
                             <h3 class="heading-light">Tests automatisés Eco Bliss Bath</h3>
                             <p>Automatisation de tests pour un site e-commerce écoresponsable : API, smoke tests, XSS,
                                 et tests fonctionnels critiques avec Cypress.</p>
-                            <a href="https://github.com/romi2316/Eco-bliss-cypress-automation"
-                                class="btn btn-primary-custom" target="_blank">Voir le projet</a>
+                            <div class="mt-auto">
+                                <a href="https://github.com/romi2316/Eco-bliss-cypress-automation"
+                                    class="btn btn-primary-custom" target="_blank">Voir le projet</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+
                 <div class="col-lg-4 col-md-6 mb-4 fade-up">
-                    <div class="portfolio-card">
+                    <div class="portfolio-card h-100 w-100">
                         <img src="images/strategie-tests.webp" alt="Stratégie de test PayForge" class="portfolio-image">
                         <div class="portfolio-content">
                             <h3 class="heading-light">Stratégie de test PayForge</h3>
@@ -232,20 +236,23 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-4 fade-up">
-                    <div class="portfolio-card">
+                    <div class="portfolio-card h-100 w-100 d-flex flex-column">
                         <img src="/images/react.webp" alt="Projet Kasa React" class="portfolio-image">
-                        <div class="portfolio-content">
+                        <div class="portfolio-content d-flex flex-column flex-grow-1">
                             <h3 class="heading-light">Kasa - Location immobilière en React</h3>
                             <p>Application React de location immobilière avec affichage des logements, filtres, et
                                 navigation fluide, conçue avec React Router.</p>
-                            <a href="https://github.com/romi2316/kasa-react" class="btn btn-primary-custom"
-                                target="_blank">Voir le projet</a>
+                            <div class="mt-auto">
+                                <a href="https://github.com/romi2316/kasa-react" class="btn btn-primary-custom"
+                                    target="_blank">Voir le projet</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+
                 <div class="col-lg-4 col-md-6 mb-4 fade-up">
-                    <div class="portfolio-card">
+                    <div class="portfolio-card h-100 w-100">
                         <img src="images/tableau-kaban.webp" alt="Tableau Kanban - Gestion de projet"
                             class="portfolio-image" />
                         <div class="portfolio-content">
@@ -261,47 +268,50 @@
 
             </div>
         </div>
-
-
-
         </div>
         </div>
     </section>
 
-    <section id="quiz" class="container my-5 fade-up">
-        <h2 class="section-title">Quiz sur les bonnes pratiques QA</h2>
-        <form id="quiz-form" class="quiz-form glass-card p-4 rounded">
-            <div class="mb-3 question-block">
-                <p><strong>1. Qu’est-ce qu’un test fonctionnel ?</strong></p>
-                <label class="answer-label"><input type="radio" name="q1" value="a"> <span class="answer-text">Tester la
-                        performance d'une application</span></label><br>
-                <label class="answer-label"><input type="radio" name="q1" value="b"> <span class="answer-text">Vérifier
-                        que les fonctionnalités répondent aux spécifications</span></label><br>
-                <label class="answer-label"><input type="radio" name="q1" value="c"> <span class="answer-text">Analyser
-                        le code source</span></label>
-            </div>
-            <div class="mb-3 question-block">
-                <p><strong>2. À quoi sert un test de non-régression ?</strong></p>
-                <label class="answer-label"><input type="radio" name="q2" value="a"> <span class="answer-text">Vérifier
-                        que les bugs ont été corrigés</span></label><br>
-                <label class="answer-label"><input type="radio" name="q2" value="b"> <span class="answer-text">Confirmer
-                        qu’une nouvelle fonctionnalité n’a pas cassé l’existant</span></label><br>
-                <label class="answer-label"><input type="radio" name="q2" value="c"> <span class="answer-text">Tester la
-                        sécurité de l’application</span></label>
-            </div>
-            <div class="mb-3 question-block">
-                <p><strong>3. Quels types d’outils utilise-t-on pour automatiser les tests ?</strong></p>
-                <label class="answer-label"><input type="radio" name="q3" value="a"> <span class="answer-text">Cypress,
-                        Selenium, JMeter</span></label><br>
-                <label class="answer-label"><input type="radio" name="q3" value="b"> <span
-                        class="answer-text">Photoshop, Illustrator</span></label><br>
-                <label class="answer-label"><input type="radio" name="q3" value="c"> <span class="answer-text">Excel,
-                        Word</span></label>
-            </div>
-            <button type="submit" class="btn btn-primary btn-primary-custom">Voir mon score</button>
-        </form>
-        <div id="quiz-result" class="mt-4"></div>
+    <section id="quiz" class="fade-up">
+        <div class="container">
+            <h2 class="section-title">Testez vos connaissances QA</h2>
+            <form id="quiz-form">
+
+                <div class="quiz-card fade-up">
+                    <p><strong>1. Quel est le but d’un test fonctionnel ?</strong></p>
+                    <label class="answer-label"><input type="radio" name="q1" value="a"> Identifier les failles de
+                        sécurité</label><br>
+                    <label class="answer-label"><input type="radio" name="q1" value="b"> Vérifier que les
+                        fonctionnalités respectent les spécifications techniques
+                    </label><br>
+                    <label class="answer-label"><input type="radio" name="q1" value="c"> Tester la performance du
+                        code</label>
+                </div>
+
+                <div class="quiz-card fade-up">
+                    <p><strong>2. À quoi sert un test de non-régression ?</strong></p>
+                    <label class="answer-label"><input type="radio" name="q2" value="a"> À améliorer le
+                        design</label><br>
+                    <label class="answer-label"><input type="radio" name="q2" value="b"> À vérifier que les anciennes
+                        fonctionnalités marchent toujours</label><br>
+                    <label class="answer-label"><input type="radio" name="q2" value="c"> À mesurer la vitesse de
+                        chargement</label>
+                </div>
+
+                <div class="quiz-card fade-up">
+                    <p><strong>3. Quel outil n’est pas utilisé pour les tests automatisés ?</strong></p>
+                    <label class="answer-label"><input type="radio" name="q3" value="a"> Photoshop</label><br>
+                    <label class="answer-label"><input type="radio" name="q3" value="b"> Cypress</label><br>
+                    <label class="answer-label"><input type="radio" name="q3" value="c"> Selenium</label>
+                </div>
+
+                <button type="submit" class="cta-button fade-up">Valider</button>
+            </form>
+
+            <div id="quiz-result" class="mt-4"></div>
+        </div>
     </section>
+
 
     <section id="contact">
         <div class="container">
@@ -339,4 +349,3 @@
 </body>
 
 </html>
-
