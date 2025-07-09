@@ -580,3 +580,30 @@ section {
         transform: rotate(360deg);
     }
 }
+
+/* Fond dégradé violet pour le menu hamburger ouvert */
+.navbar-collapse {
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Texte des liens en blanc dans le menu mobile */
+.navbar-collapse .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+/* Au survol */
+.navbar-collapse .nav-link:hover {
+  color: #d3b3ff !important;
+}
+
+/* Le bouton hamburger (toggler) */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
