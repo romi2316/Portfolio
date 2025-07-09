@@ -182,6 +182,8 @@
         </div>
     </section>
 
+
+
     <section id="portfolio">
         <div class="container">
             <h2 class="section-title fade-up">Mes projets</h2>
@@ -257,8 +259,46 @@
 
             </div>
         </div>
+
+
+
         </div>
         </div>
+    </section>
+
+    <section id="quiz" class="container my-5 fade-up">
+        <h2 class="section-title">Quiz sur les bonnes pratiques QA</h2>
+        <form id="quiz-form" class="quiz-form glass-card p-4 rounded">
+            <div class="mb-3 question-block">
+                <p><strong>1. Qu’est-ce qu’un test fonctionnel ?</strong></p>
+                <label class="answer-label"><input type="radio" name="q1" value="a"> <span class="answer-text">Tester la
+                        performance d'une application</span></label><br>
+                <label class="answer-label"><input type="radio" name="q1" value="b"> <span class="answer-text">Vérifier
+                        que les fonctionnalités répondent aux spécifications</span></label><br>
+                <label class="answer-label"><input type="radio" name="q1" value="c"> <span class="answer-text">Analyser
+                        le code source</span></label>
+            </div>
+            <div class="mb-3 question-block">
+                <p><strong>2. À quoi sert un test de non-régression ?</strong></p>
+                <label class="answer-label"><input type="radio" name="q2" value="a"> <span class="answer-text">Vérifier
+                        que les bugs ont été corrigés</span></label><br>
+                <label class="answer-label"><input type="radio" name="q2" value="b"> <span class="answer-text">Confirmer
+                        qu’une nouvelle fonctionnalité n’a pas cassé l’existant</span></label><br>
+                <label class="answer-label"><input type="radio" name="q2" value="c"> <span class="answer-text">Tester la
+                        sécurité de l’application</span></label>
+            </div>
+            <div class="mb-3 question-block">
+                <p><strong>3. Quels types d’outils utilise-t-on pour automatiser les tests ?</strong></p>
+                <label class="answer-label"><input type="radio" name="q3" value="a"> <span class="answer-text">Cypress,
+                        Selenium, JMeter</span></label><br>
+                <label class="answer-label"><input type="radio" name="q3" value="b"> <span
+                        class="answer-text">Photoshop, Illustrator</span></label><br>
+                <label class="answer-label"><input type="radio" name="q3" value="c"> <span class="answer-text">Excel,
+                        Word</span></label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-primary-custom">Voir mon score</button>
+        </form>
+        <div id="quiz-result" class="mt-4"></div>
     </section>
 
     <section id="contact">
