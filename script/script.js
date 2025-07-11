@@ -1,4 +1,3 @@
-
 // Loading animation
 window.addEventListener('load', function () {
   const loading = document.getElementById('loading');
@@ -209,15 +208,15 @@ if ('scrollRestoration' in history) {
 function launchConfetti() {
   const colors = ['#667eea', '#764ba2', '#f093fb', '#ffcb05', '#00d2ff', '#da70d6'];
   const confettiContainer = document.getElementById('confetti-container');
-for (let i = 0; i < 600; i++) {
+  for (let i = 0; i < 600; i++) {
     const confetti = document.createElement('div');
     confetti.classList.add('confetti');
     confetti.style.left = Math.random() * 100 + 'vw';
     confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
-confetti.style.width = confetti.style.height = (Math.random() * 12 + 6) + 'px';
+    confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+    confetti.style.width = confetti.style.height = (Math.random() * 12 + 6) + 'px';
     confetti.style.transform = `rotate(${Math.random() * 180}deg)`;
-confetti.style.animationDelay = Math.random() * 3 + 's';
+    confetti.style.animationDelay = Math.random() * 3 + 's';
 
     confettiContainer.appendChild(confetti);
 
