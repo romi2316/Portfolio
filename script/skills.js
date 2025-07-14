@@ -1,42 +1,7 @@
-// Fonction pour charger le fichier JSON et générer le HTML des skills
-async function loadSkills() {
-    try {
-        const response = await fetch('data/skills.json');
-        if (!response.ok) throw new Error('Erreur de chargement du fichier skills.json');
-        const skills = await response.json();
-
-        const skillsContainer = document.getElementById('skills-container');
-        if (!skillsContainer) {
-            console.error("L'élément #skills-container est introuvable");
-            return;
-        }
-
-        skills.forEach(skill => {
-            const col = document.createElement('div');
-            col.className = 'col-lg-4 col-md-6 mb-4 fade-up';
-
-            let iconHTML = '';
-            if (skill.iconClass) {
-                iconHTML = `<div class="skill-icon"><i class="${skill.iconClass}"></i></div>`;
-            } else if (skill.image) {
-                iconHTML = `<img src="images/${skill.image}" alt="${skill.alt}" style="width: 64px; height: 64px; margin-bottom: 1rem;">`;
-            }
-
-            col.innerHTML = `
+async function loadSkills(){try{let e=await fetch("data/skills.json");if(!e.ok)throw Error("Erreur de chargement du fichier skills.json");let l=await e.json(),i=document.getElementById("skills-container");if(!i){console.error("L'\xe9l\xe9ment #skills-container est introuvable");return}l.forEach(e=>{let l=document.createElement("div");l.className="col-lg-4 col-md-6 mb-4 fade-up";let t="";e.iconClass?t=`<div class="skill-icon"><i class="${e.iconClass}"></i></div>`:e.image&&(t=`<img src="images/${e.image}" alt="${e.alt}" style="width: 64px; height: 64px; margin-bottom: 1rem;">`),l.innerHTML=`
         <div class="skill-card">
-          ${iconHTML}
-          <h3 class="heading-light">${skill.title}</h3>
-          <p>${skill.text}</p>
+          ${t}
+          <h3 class="heading-light">${e.title}</h3>
+          <p>${e.text}</p>
         </div>
-      `;
-
-            skillsContainer.appendChild(col);
-        });
-    } catch (error) {
-        console.error('Erreur lors du chargement des compétences:', error);
-    }
-}
-
-
-// Appel de la fonction au chargement de la page
-document.addEventListener('DOMContentLoaded', loadSkills);
+      `,i.appendChild(l)})}catch(t){console.error("Erreur lors du chargement des comp\xe9tences:",t)}}document.addEventListener("DOMContentLoaded",loadSkills);
