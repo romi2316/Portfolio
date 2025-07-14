@@ -1,23 +1,37 @@
 [
   {
-    "image": "image1.png",
-    "alt": "Capture d’écran du projet Booki",
-    "title": "Booki",
-    "text": "Création d’un site de réservation d’hébergements avec HTML & CSS.",
-    "link": "#"
+    "image": "images/loop.webp",
+    "alt": "Campagne de tests 724events",
+    "title": "Campagne de tests 724events",
+    "text": "Organisation et exécution d'une campagne de tests complète pour l'application 724events, avec bilan, cahier de recette et rapport d'anomalies.",
+    "link": "https://github.com/romi2316/campagne-de-tests-pour-724events"
   },
   {
-    "image": "image2.png",
-    "alt": "Capture d’écran du projet Mon Vieux Grimoire",
-    "title": "Mon Vieux Grimoire",
-    "text": "API sécurisée avec Express et MongoDB, gestion d’authentification et CRUD.",
-    "link": "#"
+    "image": "images/automation.webp",
+    "alt": "Eco Bliss Bath - Tests automatisés",
+    "title": "Tests automatisés Eco Bliss Bath",
+    "text": "Automatisation de tests pour un site e-commerce écoresponsable : API, smoke tests, XSS, et tests fonctionnels critiques avec Cypress.",
+    "link": "https://github.com/romi2316/Eco-bliss-cypress-automation"
   },
   {
-    "image": "image3.png",
-    "alt": "Capture d’écran du projet Kasa",
-    "title": "Kasa",
-    "text": "Refonte d’un site avec React, utilisation de composants et React Router.",
-    "link": "#"
+    "image": "images/strategie-tests.webp",
+    "alt": "Stratégie de test PayForge",
+    "title": "Stratégie de test PayForge",
+    "text": "Élaboration complète de la stratégie de test pour le projet TOMSEN (PayForge) incluant revue des exigences, cahier de recette, sprints et campagne de non-régression.",
+    "link": "https://github.com/romi2316/Payforge-strategie-tests"
+  },
+  {
+    "image": "images/react.webp",
+    "alt": "Projet Kasa React",
+    "title": "Kasa - Location immobilière en React",
+    "text": "Application React de location immobilière avec affichage des logements, filtres, et navigation fluide, conçue avec React Router.",
+    "link": "https://github.com/romi2316/kasa-react"
+  },
+  {
+    "image": "images/tableau-kaban.webp",
+    "alt": "Tableau Kanban - Gestion de projet",
+    "title": "Menu Maker - Gestion de projet",
+    "text": "Planification complète du projet Menu Maker pour l’agence Webgencia : spécifications techniques, Kanban Notion, veille technologique, présentation client.",
+    "link": "https://github.com/roumaissa-visions/Menu-Maker-Gestion-de-Projet"
   }
 ]

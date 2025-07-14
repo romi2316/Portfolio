@@ -1,56 +1,56 @@
 [
   {
-    "image": "cypress.png",
+    "image": "cypress.webp",
     "alt": "Logo Cypress",
     "title": "Cypress",
-    "text": "Automatisation de tests end-to-end avec Cypress pour valider les parcours utilisateurs. Création de scénarios fiables, exécution en mode headless et génération de rapports de tests."
+    "text": "Automatiser les tests end-to-end pour valider les parcours utilisateurs sur les applications web."
   },
-    {
-    "image": "postman.png",
+  {
+    "image": "postman.webp",
     "alt": "Logo Postman",
     "title": "Postman",
-    "text": "Tests d’API avec Postman : création de requêtes, vérification des réponses, automatisation via des collections."
-  },
-      {
-    "image": "xray.png",
-    "alt": "Xray Postman",
-    "title": "Xray",
-    "text": "Gestion des tests dans Jira : création de plans de test, exécution, suivi des résultats et couverture des exigences."
+    "text": "Tester les API REST via des requêtes, des scripts de vérification et des collections automatisées."
   },
   {
-    "image": "html-css.jpg",
+    "iconClass": "fas fa-tasks",
+    "alt": "Xray",
+    "title": "Xray",
+    "text": "Gérer les cas de test dans Jira : conception, exécution, suivi des campagnes et couverture des exigences."
+  },
+  {
+    "iconClass": "fab fa-html5",
     "alt": "Logo HTML et CSS",
     "title": "HTML - CSS",
-    "text": "Intégration d’interfaces responsives et accessibles, utilisation de maquettes Figma, développement d’animations CSS"
+    "text": "Intégrer des interfaces web responsives à partir de maquettes, avec animations CSS et accessibilité."
   },
   {
-    "image": "js.jpg",
+    "iconClass": "fab fa-js-square",
     "alt": "Logo JavaScript",
     "title": "JavaScript",
-    "text": "Manipulation du DOM, création d’éléments dynamiques, gestion de données de formulaires"
+    "text": "Créer des interactions dynamiques et manipuler le DOM dans des applications web modernes."
   },
   {
-    "image": "react.jpg",
+    "iconClass": "fab fa-react",
     "alt": "Logo React",
     "title": "React",
-    "text": "Création d’applications React, création de composants et manipulation de leur état"
+    "text": "Développer des composants réutilisables et gérer leur état dans des interfaces réactives."
   },
   {
-    "image": "gestion-de-projet.png",
-    "alt": "Icône de gestion de projet",
-    "title": "Gestion de projet",
-    "text": "Analyse des besoins d’un client, définition d’une solution technique, planification du projet"
+    "iconClass": "fas fa-tasks",
+    "alt": "Icône gestion projet",
+    "title": "Gestion de projet QA",
+    "text": "Organiser les phases de test, planifier les sprints, et collaborer avec les équipes produit et dev."
   },
   {
-    "image": "optimisation-et-debug.png",
-    "alt": "Icône optimisation",
-    "title": "Optimisation et debug",
-    "text": "Identification des bugs, optimisation SEO et publication d’un site"
+    "iconClass": "fas fa-bug",
+    "alt": "Icône debug",
+    "title": "Debug & Optimisation",
+    "text": "Identifier les bugs, optimiser le SEO, améliorer les performances et publier les livrables web."
   },
   {
-    "image": "test.png",
+    "iconClass": "fas fa-vial",
     "alt": "Icône tests",
-    "title": "Tests",
-    "text": "Tests exploratoires, unitaires, d’intégration, automatisation de tests E2E et API"
+    "title": "Stratégies de test",
+    "text": "Concevoir et exécuter des tests fonctionnels, exploratoires, API, unitaires, et de non-régression."
   }
 ]

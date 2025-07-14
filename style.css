@@ -265,6 +265,10 @@ section {
     height: 100%;
 }
 
+.skill-card img {
+    object-fit: cover;
+}
+
 .skill-card:hover {
     transform: translateY(-10px) rotateX(5deg);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -567,6 +571,11 @@ section {
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+    .hero-subtitle {
+        font-size: 1.9rem;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
     .timeline::after {
         left: 31px;
     }
